@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch with Laps</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="display">
+        <span class="time" id="hr">00</span>
+        <span class="colon">:</span>
+        <span class="time" id="min">00</span>
+        <span class="colon">:</span>
+        <span class="time" id="sec">00</span>
+        <span class="colon">.</span>
+        <span class="time" id="millisec">000</span>
+      </div>
+      <div class="buttons">
+        <button id="start">
+          <i class="fa-solid fa-play" id="play-pause-icon"></i>
+        </button>
+        <button id="lap">
+          <i class="fa-solid fa-location-arrow" id="lap-icon"></i>
+        </button>
+        <button id="reset">
+          <i class="fa-solid fa-rotate-left" id="reset-icon"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="lapContainer"></div>
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
